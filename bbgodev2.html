@@ -1,0 +1,25 @@
+<html>
+<body>
+  <script>
+    document.getElementById('romaRakamiCevir').onclick = function(sayac) {
+      var onlukDeger = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+      var romaRakami = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
+
+      var sonuc = "";
+
+      for(var kontrol = 0; kontrol < onlukDeger.length; kontrol++) {
+        while(onlukDeger[kontrol] <= num) {
+          sonuc += romaRakami[kontrol];
+          num -= onlukDeger[kontrol];
+        }
+      }
+
+      return sonuc;
+    };
+  </script>
+  <p>Roma rakamı giriniz: </p>
+  <p><input type="input" id="sayac"> <button id="romaRakamiCevir">Değiştir</button></p>
+  <p>Onluk tabandaki değer:</p>
+  <div id="sonuc"></div>
+</body>
+<html>
